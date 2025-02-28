@@ -6,6 +6,6 @@ function getRandomMessage() {
     return contents[Math.floor(Math.random() * contents.length)]; // Pick a random message
 }
 function updateContent() {
-    document.getElementById("status-message").innerText = getRandomMessage();
+    document.getElementById("dynamic-content").innerText = getRandomMessage();
 }
 updateContent();
