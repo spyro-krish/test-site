@@ -47,11 +47,22 @@
         <p>This is a simple single-page website.</p>
         <button onclick="showMessage()">Click Me</button>
         <p id="message"></p>
+        <p id="dynamic-content"></p>
     </div>
     <script>
         function showMessage() {
             document.getElementById("message").innerText = "Hello, thanks for visiting!";
         }
+        function updateContent() {
+            const contents = ["kaliraj", "anwar", "sriram"]; // Add more as needed
+            let index = 0;
+
+            setInterval(() => {
+                document.getElementById("dynamic-content").innerText = contents[index];
+                index = (index + 1) % contents.length; // Loop through array
+            }, 4000);
+        }
+        updateContent();
     </script>
 </body>
 </html>
