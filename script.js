@@ -2,7 +2,7 @@ function showMessage() {
     document.getElementById("message").innerText = "Hello, thanks for visiting!";
 }
 function updateContent() {
-    const contents = ["kaliraj", "sri","ram","an","war"]; // Add more as needed
+    const contents = ["kaliraj", "sriram","anwar"]; // Add more as needed
     let index = 0;
 
     setInterval(() => {
@@ -12,6 +12,6 @@ function updateContent() {
             document.getElementById("dynamic-content").innerText = contents[index];
         // }
         index = (index + 1) % contents.length; // Loop through array
-    }, 500);
+    }, 30000);
 }
 updateContent();
