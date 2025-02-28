@@ -2,7 +2,7 @@ function showMessage() {
     document.getElementById("message").innerText = "Hello, thanks for visiting!";
 }
 function getRandomMessage() {
-    const contents = ["kkkkk", "any", "then", "any", "kkkk"];
+    const contents = ["kaliraj", "anwar", "sriram"];
     return contents[Math.floor(Math.random() * contents.length)]; // Pick a random message
 }
 function updateContent() {
