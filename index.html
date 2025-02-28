@@ -54,7 +54,7 @@
             document.getElementById("message").innerText = "Hello, thanks for visiting!";
         }
         function updateContent() {
-            const contents = ["kali", "raj", "sri","ram","an","war"]; // Add more as needed
+            const contents = ["kaliraj", "raj", "sri","ram","an","war"]; // Add more as needed
             let index = 0;
 
             setInterval(() => {
@@ -64,7 +64,7 @@
                     document.getElementById("dynamic-content").innerText = contents[index];
                 }
                 index = (index + 1) % contents.length; // Loop through array
-            }, 3000);
+            }, 500);
         }
         updateContent();
     </script>
