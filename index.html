@@ -54,13 +54,17 @@
             document.getElementById("message").innerText = "Hello, thanks for visiting!";
         }
         function updateContent() {
-            const contents = ["kaliraj", "anwar", "sriram"]; // Add more as needed
+            const contents = ["kali", "raj", "sri","ram"]; // Add more as needed
             let index = 0;
 
             setInterval(() => {
-                document.getElementById("dynamic-content").innerText = contents[index];
+                if(index == 0||index==2){
+                    document.getElementById("dynamic-content").innerText = contents[index]+contents[index+1];
+                }else{
+                    document.getElementById("dynamic-content").innerText = contents[index];
+                }
                 index = (index + 1) % contents.length; // Loop through array
-            }, 4000);
+            }, 400);
         }
         updateContent();
     </script>
